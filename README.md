@@ -1,102 +1,191 @@
-GreenPoints 🌱
-Small Actions. Greener Campuses. Bigger Impact.
+<div align="center">
 
-GreenPoints is a responsive, gamified sustainability web app designed to encourage college students to build everyday eco-friendly habits. Students choose small challenges, record completed actions, earn GreenPoints, maintain streaks, and unlock achievement badges.
-Project status: This is a self-contained front-end demo for a college project or hackathon. Campus-wide statistics and other students on the leaderboard are illustrative sample data, not verified real-world measurements.
+# 🌱 GreenPoints
 
-The Problem
-Many students want to help the environment but may not know where to start or how to stay consistent. GreenPoints makes sustainability feel approachable by turning small actions—such as recycling, saving water, and carrying reusable items—into simple daily challenges.
-The Solution
-Students can use GreenPoints to:
-- Complete a daily checklist of sustainability challenges.
-- Earn points for each challenge, with protection against claiming the same reward twice in one local calendar day.
-- Track daily progress, active days, current streaks, and longest streaks.
-- Unlock badges and progress through eco-levels.
-- View personal activity and sample campus impact statistics.
-- Compare their score with fictional demo students on weekly and all-time leaderboards.
-- Personalize the app with a display name, theme, reminder preference, and reduced-motion setting.
-Features
-1. Dashboard
-Provides a personalized greeting, today's progress ring, lifetime points, challenge completion count, streak, eco-level, daily checklist, recent badges, and seven-day activity calendar.
-2. Daily Challenges
-Includes 10 sample challenges with point rewards, descriptions, categories, and difficulty labels. Users can search by name or description and filter by category.
-Challenge	Points
-Carry a reusable water bottle	20
-Recycle paper or plastic correctly	25
-Switch off unused lights	10
-Walk or cycle a campus trip	20
-Bring a reusable lunch container	15
-Avoid single-use plastic today	20
-Use a refill station	15
-Save water while washing	10
-Bring a reusable shopping bag	15
-Pick up litter safely	25
+### Small Actions. Greener Campuses. Bigger Impact.
 
+A gamified sustainability web app that helps college students build eco-friendly habits through daily challenges, points, streaks, badges, and a shared campus impact dashboard.
 
-Completing a challenge updates the point total and other relevant metrics immediately. A completion can be undone for the current day, but the same challenge reward remains unavailable until the next local calendar day.
-3. Achievements and Eco-levels
-Badge eligibility is calculated from recorded demo activity.
-- First Green Step: complete at least one challenge.
-- Recycling Hero: complete five recycling actions.
-- Water Saver: complete five water-conservation actions.
-- Energy Guardian: complete five energy-saving actions.
-- Three-Day Streak: have activity on three consecutive calendar days.
-- Eco Champion: earn 500 lifetime points.
-- Campus Guardian: earn 1,000 lifetime points.
-Eco-levels are based on lifetime GreenPoints: Eco Rookie, Green Explorer, Planet Protector, Eco Champion, and Campus Guardian.
-4. Campus Impact
-Shows illustrative sample figures for reusable bottles, recyclables, energy conservation, weekly activity, and a campus action goal. It also reports a user's personal challenge activity based on local demo records.
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![localStorage](https://img.shields.io/badge/Storage-localStorage-10B981)
 
-GreenPoints are motivational scores, not carbon-emissions measurements. The demo does not claim that points directly equal environmental savings.
-5. Leaderboard
-Displays weekly and all-time rankings using fictional student profiles and the current demo user's score. The sample data is for presentation purposes and does not represent actual students.
-6. Profile and Preferences
-Users can edit their display name, view recent completed challenges, switch between light and dark themes, save a local reminder preference, enable reduced motion, and reset the demo after confirming.
+</div>
 
-The reminder preference is stored locally only; this demo does not send push notifications or scheduled reminders.
-Tech Stack
-- HTML5 for the app structure
-- CSS3 for responsive layout, visual styling, themes, and animations
-- Vanilla JavaScript for navigation, point calculations, filtering, streaks, badges, and interactions
-- Browser localStorage for saving demo progress and preferences on the same browser and device
-- Inline SVG for lightweight icons and the progress ring
-The prototype is a single self-contained HTML file and does not require a framework, package installation, API key, or backend server.
-Getting Started
-Option 1: Open the file directly
-1. Download or copy the project file index.html into a folder.
-2. Open index.html in a modern browser.
-3. Start by exploring the Dashboard, then open Daily Challenges and complete a task.
-Option 2: Use Visual Studio Code
-1. Open the project folder in Visual Studio Code.
-2. Open index.html.
-3. Run it with a local preview extension such as Live Server, or open the file directly in your browser.
-No build command or dependency installation is required.
-How to Use the App
-1. Open the Dashboard to review the current demo progress.
-2. Select Daily Challenges.
-3. Use the search box or category filters to find a task.
-4. Complete the real-world activity, then click Complete in the demo.
-5. Review the updated points, streak, level, and achievement eligibility.
-6. Visit Campus Impact, Leaderboard, or Profile to explore the other sections.
-7. To start the demo over, open Profile → Reset demo and confirm the action.
-Data and Privacy Notes
-- Progress is saved in browser localStorage under the key greenpoints-demo-v1.
-- Saved state is local to the browser profile and device. It does not sync between students or devices.
-- Clearing browser storage may remove the locally saved demo progress.
-- The app does not include user accounts, authentication, a shared database, or server-side verification.
-- Challenge completion is self-reported in this prototype; it is not independently verified.
-- Campus impact figures and other students' leaderboard scores are sample values.
-- No real notifications are sent.
-Limitations and Future Improvements
-Possible next steps for a production version include:
-- Add student sign-in and a secure shared database.
-- Connect verified campus recycling, energy, and sustainability data.
-- Create real campus groups and a leaderboard based on participating students.
-- Add optional evidence or event-based verification for selected challenges.
-- Build genuine reminder delivery with user consent.
-- Add administrative tools and configurable challenge schedules.
-- Conduct accessibility, security, and cross-browser testing before deployment.
-Project Goal
-GreenPoints aims to make sustainability easier to start and easier to maintain by celebrating small, repeatable actions. When many students take part, those habits can help build a greener campus culture.
+---
 
-Small Actions. Greener Campuses. Bigger Impact.
+## 🌍 About
+
+Many students want to help the environment but don't know where to start. **GreenPoints** turns sustainability into a daily habit: pick a small eco-friendly action, complete it, earn points, keep your streak alive, and watch individual effort add up to collective campus impact.
+
+Built as a fully working demo for a college innovation competition. No backend, API key, or sign-up needed.
+
+## 📸 Screenshots
+
+| Dashboard | Daily Challenges | Campus Impact |
+|:---:|:---:|:---:|
+| <img src="screenshots/dashboard.png" alt="Dashboard" width="300"> | <img src="screenshots/challenges.png" alt="Daily Challenges" width="300"> | <img src="screenshots/campus-impact.png" alt="Campus Impact" width="300"> |
+
+## ✨ Features
+
+- **Dashboard:** animated progress ring, live stat cards (points, challenges, streak, level), today's challenges, and a 7-day streak calendar
+- **Daily Challenges:** 10 challenges with Easy / Medium / Hard badges, category filters, search, and automatic daily reset
+- **Achievements:** 7 badges that unlock from real activity, with locked and unlocked states
+- **Campus Impact:** campus stats, semester goal, weekly activity chart, category breakdown, and a personal "Your Contribution" section
+- **Leaderboard:** weekly and all-time tabs, with your rank updating live as you earn points
+- **Profile:** editable name, lifetime stats, streaks, badge collection, challenge history, light/dark theme, and a confirmed reset
+- **Persistent progress** using `localStorage`, with duplicate-reward prevention and undo
+
+## 🎮 Gamification
+
+### Levels
+
+| Level | Points |
+|---|---|
+| Eco Rookie | 0 – 99 |
+| Green Explorer | 100 – 249 |
+| Planet Protector | 250 – 499 |
+| Eco Champion | 500 – 999 |
+| Campus Guardian | 1,000+ |
+
+### Badges
+
+| Badge | How to unlock |
+|---|---|
+| First Green Step | Complete your first challenge |
+| Recycling Hero | Complete 5 recycling challenges |
+| Water Saver | Complete 5 water challenges |
+| Energy Guardian | Complete 5 energy-saving challenges |
+| Three-Day Streak | Complete challenges on 3 consecutive days |
+| Eco Champion | Reach 500 points |
+| Campus Guardian | Reach 1,000 points |
+
+### Challenges (max 175 points per day)
+
+| Challenge | Difficulty | Points |
+|---|---|---|
+| Carry a Reusable Bottle | Easy | 20 |
+| Recycle Paper or Plastic | Medium | 25 |
+| Switch Off Unused Lights | Easy | 10 |
+| Walk or Cycle on Campus | Medium | 20 |
+| Bring Reusable Lunch Container | Easy | 15 |
+| Avoid Single-Use Plastic | Medium | 20 |
+| Use a Refill Station | Easy | 15 |
+| Save Water While Washing | Easy | 10 |
+| Bring a Reusable Shopping Bag | Easy | 15 |
+| Pick Up & Dispose Litter | Hard | 25 |
+
+## 🛠 Tech Stack
+
+- React + Vite
+- Tailwind CSS
+- Lucide React (icons)
+- Recharts (charts)
+- Browser `localStorage` (persistence)
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/<your-username>/greenpoints.git
+
+# Go into the project
+cd greenpoints
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+
+Open **http://localhost:5173** in your browser.
+
+To create a production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+greenpoints/
+├── public/
+├── screenshots/
+├── src/
+│   ├── components/   # Sidebar, Header, StatCard, ChallengeCard, ProgressRing,
+│   │                 # StreakCalendar, AchievementBadge, ImpactChart,
+│   │                 # LeaderboardTable, ToastNotification, ConfirmationModal
+│   ├── pages/        # Dashboard, Challenges, Achievements, CampusImpact,
+│   │                 # Leaderboard, Profile
+│   ├── data/         # sample challenges, badges, leaderboard, campus stats
+│   ├── utils/        # points, levels, streaks, badges, date logic
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
+```
+
+## ⚙️ How It Works
+
+- **Points are awarded once:** each completion is stored per local calendar date, so repeated clicks or refreshes never give duplicate points.
+- **Streaks are honest:** a day counts only when at least one challenge is completed, not just because the app was opened.
+- **Daily reset:** challenges reset on a new local date, while lifetime points, badges, and history are kept.
+- **Centralized logic:** points, level, streak, and badge calculations live in reusable utility functions.
+
+## 🎨 Design System
+
+| Color | Hex | Use |
+|---|---|---|
+| Forest Green | `#14532D` | Brand, headings, hero |
+| Emerald | `#10B981` | Buttons, progress, success |
+| Fresh Mint | `#D1FAE5` | Soft highlights |
+| Cream White | `#FAFAF5` | Page background |
+| Sage | `#E7EFE5` | Subtle cards |
+| Charcoal | `#1F2937` | Primary text |
+| Sunny Yellow | `#FBBF24` | Rewards and points |
+| Soft Coral | `#FB7185` | Warnings and streak reminders |
+
+## ♿ Accessibility
+
+- Responsive layout for desktop, tablet, and mobile
+- Semantic HTML, labeled controls, and visible focus states
+- Completion is never shown by color alone
+- Respects reduced-motion preferences
+- Light and dark themes
+
+## ⚠️ Demo Data Disclaimer
+
+- Campus-wide statistics (bottles, recycled material, energy, total actions, active students) are **illustrative sample data**, not verified measurements.
+- Leaderboard students are **fictional**.
+- Your points, streaks, badges, and "Your Contribution" are calculated from your real activity in the app.
+- Points do not directly measure carbon emissions saved.
+- Daily reminders are a saved preference only; no real notifications are sent.
+
+## 🗺 Roadmap
+
+- [ ] Real authentication and cloud sync
+- [ ] Department and team competitions
+- [ ] Photo or QR challenge verification
+- [ ] Admin dashboard for campus sustainability teams
+- [ ] Real push notifications
+
+## 👨‍💻 Author
+
+**Mohd Bilal**
+Information Technology, ADG Institute of Professional Studies
+
+- GitHub: [@your-username](https://github.com/your-username)
+- LinkedIn: [your-profile](https://linkedin.com/in/your-profile)
+
+---
+
+<div align="center">
+
+**🌱 Small actions, big impact. Let's make our campus greener, together.**
+
+</div>
