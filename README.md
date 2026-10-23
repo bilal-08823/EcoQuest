@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🌱 GreenPoints
+# 🌱 EcoQuest
 
 ### Small Actions. Greener Campuses. Bigger Impact.
 
